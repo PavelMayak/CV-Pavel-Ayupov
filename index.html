@@ -3,87 +3,101 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Pavel Ayupov CV</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <table>
-        <tr>
-            <td>
-                <img src="Foto.jpg" width="200" alt="Моя фотография">
-            </td>
-            <td>
+<div>
+    <div class="container">
+        <div class="info">
+            <img src="Foto.jpg" alt="Моя фотография"
+            class="avatar">
+
+            <div class="info-text">
                 <h1>Павел Аюпов</h1>
-                <p><em>Я маркетолог и <strong>начинающий разработчик</strong></em></p>
+                <p>Я маркетолог и начинающий разработчик</p>
                 <p>Я люблю путешествовать и смотреть хорошее кино</p>
-            </td>
-        </tr>
-    </table>
-    
-    <hr>
 
-    <h2>Мои социальные сети</h2>
-    <ul>
-        <li><a href="" target="_blank">LinkedIn</a></li>
-        <li><a href="" target="_blank">Telegram</a></li>
-    </ul>
-
-    <hr>
-
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Спорт</li>
-        <li>Путешествия</li>
-        <li>Творчество</li>
-    </ol>
-
-    <hr>
-
-    <h2>Опыт работы</h2>
-    <table border="1">
-        <thead>
-            <tr>
-              <th>Компания</th>
-              <th>Должность</th>
-              <th>Время работы</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-              <td>Завод поимерных труб</td>
-              <td>Маркетолог</td>
-              <td>2013-2022</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <hr>
-
-    <h2>Мои проекты</h2>
-    <a href="projekt.html">Посмотреть</a>
-
-    <hr>
-
-    <h2>Связаться со мной</h2>
-    <form action="/">
-        <label for="name">Ваше имя</label>
-        <input type="text" id="name" placeholder="Введите ваше имя...">
+                <h4>Мои социальные сети</h4>
+            
+                <a href="" target="_blank">LinkedIn</a>
+                |
+                <a href="" target="_blank">Telegram</a>
+            </div>
         
-        <br>
-
-        <label for="email">Ваш email</label>
-        <input type="text" id="email" placeholder="Введите email...">
-
-        <br>
-
-        <label for="text">Вашe сообщение</label>
-        <br>
-        <textarea name="text" id="text" cols="15" rows="2"></textarea>
+    </div>
 
 
-        <br>
+        <div class="card bg-yellow">
+            <h2>Мои хобби</h2>
+                <ol class="list">
+                    <li>Спорт</li>
+                    <li>Путешествия</li>
+                    <li>Творчество</li>
+                </ol>
+        </div>
+       
+        <div class="card bg-green">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                
+            <tr>
+                <td>Завод поимерных труб</td>
+                <td>Проектировщик</td>
+                <td>2013-2017</td>
+             </tr>
 
-        <input type="submit" value="Связаться!">
+            <tr>
+                <td>Завод поимерных труб</td>
+                <td>Маркетолог</td>
+                <td>2017-2018</td>
+            </tr>
 
-    </form>
+            <tr>
+                <td>Завод поимерных труб</td>
+                <td>Начальник отдела маркетинга</td>
+                <td>2018-2022</td>
+            </tr>
+               
+            </table>
+        </div>
+       
+        <div class="card bg-red">
+            <h2>Мои проекты</h2>
+            <ul class="link-list">
+                <li>CV</li>
+                <li>Bulding day</li>
+                <li>New Year</li>
+            </ul>
+        </div>
 
+        <div class="contact">
+            <h2>Связаться со мной</h2>
+            <form action="/">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" placeholder="Введите ваше имя...">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="email">Ваш email</label>
+                        <input type="text" id="email" placeholder="Введите email...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="text">Вашe сообщение</label>
+                    <textarea name="text" id="text" cols="15" rows="2"></textarea>
+                </div>
+
+                <input class="btn" type="submit" value="Связаться!">
+            </form>
+        </div>
+
+        <div class="position">
+            <div class="box"></div>
+        </div>
+
+
+    </div>
+    
 </body>
 </html>
